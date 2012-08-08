@@ -21,7 +21,7 @@ Thoughts
 Simple builds
 =============
 
-Setting up an svn project could be as simple as::
+Setting up an Git project could be as simple as::
 
     build_on_commit(c,
         name = "buildbot",
@@ -222,6 +222,7 @@ reused multiple times::
 Here ``configure`` is the thing that pulls all the declaratively defined
 information together and emits the various standard Buildbot objects.
 
+
 Support loading YAML
 --------------------
 
@@ -231,10 +232,10 @@ The first example might look like::
       - name: buildbot
         repository: git://github.com/buildbot/buildbot
         steps:
-          - virtualenv --no-site-packages .",
-          - bin/python setup.py develop",
-          - bin/pip install mock",
-          - bin/trial buildbot",
+          - virtualenv --no-site-packages .
+          - bin/python setup.py develop
+          - bin/pip install mock
+          - bin/trial buildbot
         slaves:
           - windows-1
           - windows-2
