@@ -1,0 +1,6 @@
+*.pyc
+_trial_temp/
+bin/
+distribute-*.tar.gz
+include/
+lib/
